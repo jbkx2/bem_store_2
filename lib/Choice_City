@@ -1,0 +1,291 @@
+import 'package:bem_store/Vistasa';
+import 'package:flutter/material.dart';
+import 'package:bem_store/Recomendations';
+import 'package:bem_store/Choice_Sport';
+
+class City extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      body: new Stack(
+        children: <Widget>[
+          new GradientBack(),
+          new Column(
+            children:<Widget>[
+              new ButtonBack(),
+            ],
+          ),
+          new Container(
+            alignment: Alignment.center,
+            child: Column(
+              children:<Widget>[
+                new Title(),
+                new Button(),
+                new Button1(),
+                new Button2(),
+                new Button3(),
+                new ButtonAccept2(),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Title extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      alignment: Alignment.center,
+      margin: new EdgeInsets.only(
+        top: 40.0,
+        right: 20.0,
+        left: 20.0,
+        bottom: 10.0,
+      ),
+      child: new Column(
+        children:<Widget>[
+          new Text(
+              "BEMstore",
+              style: const TextStyle(
+                fontSize: 55.0,
+                color: Color(0x906CFF17),
+                fontWeight: FontWeight.w600,
+              )
+          ),//Text
+        ],//<Widget>
+      ),//Column o Row
+    );
+  }
+}
+
+class ButtonBack extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+        top: 80.0,
+        right: 20.0,
+        left: 20.0,
+        bottom: 10.0,
+      ),
+      child: new SizedBox(
+        width: 50.0,
+        height: 50.0,
+        child: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class Button extends StatefulWidget {
+  @override
+  EffectButton createState() => EffectButton();
+}
+
+class EffectButton extends State<Button> {
+  @override
+
+  Widget build(BuildContext context) {
+    return new Container(
+      alignment: Alignment.center,
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFf38b02),
+            offset: new Offset(10.0, 10.0),
+            blurRadius: 30.0,
+          ),
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFfeb800),
+      ),
+      child: new Center(
+        child: new Text(
+          "NEUQUEN",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+//No traducir!!!!!!!!! Mauro
+class Button1 extends StatefulWidget {
+  @override
+  EffectButton1 createState() => EffectButton1();
+}
+
+class EffectButton1 extends State<Button1> {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      alignment: Alignment.center,
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFf38b02),
+            offset: new Offset(10.0, 10.0),
+            blurRadius: 30.0,
+          )
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFfeb800),
+      ),
+      child: new Center(
+        child: new Text(
+          "CIPOLLETTI",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+class Button2 extends StatefulWidget {
+  @override
+  EffectButton2 createState() => EffectButton2();
+}
+
+class EffectButton2 extends State<Button2> {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      alignment: Alignment.center,
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFf38b02),
+            offset: new Offset(10.0, 10.0),
+            blurRadius:30.0,
+          )
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFfeb800),
+      ),
+      child: new Center(
+        child: new Text(
+          "CENTENARIO",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Button3 extends StatefulWidget {
+  @override
+  EffectButton3 createState() => EffectButton3();
+}
+
+class EffectButton3 extends State<Button3> {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      alignment: Alignment.center,
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFf38b02),
+            offset: new Offset(10.0, 10.0),
+            blurRadius:30.0,
+          )
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFfeb800),
+      ),
+      child: new Center(
+        child: new Text(
+          "PLOTTIER",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class ButtonAccept2 extends StatelessWidget {
+  //MyHomePage({Key key, this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+          top: 40.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      child: Center(
+        child: SizedBox(
+          width: 180,
+          height: 50.0,
+          child:  RaisedButton(
+            color: Color(0xFFEEEEEE),
+            child: Text(
+              'Listo',
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Color(0xFFfeb800)
+              ),
+            ),
+            onPressed:() {
+              Route route = MaterialPageRoute(builder: (bc) => Recommendations());
+              Navigator.of(context).push(route);
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
+

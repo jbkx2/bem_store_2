@@ -1,0 +1,274 @@
+import 'package:flutter/material.dart';
+import 'package:bem_store/Choice_City';
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "BEMstore",
+      theme: ThemeData(
+
+        primarySwatch: Colors.blue,
+      ),
+      home: new Header(),
+    );
+  }
+}
+
+class GradientBack extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Container(
+        decoration: new BoxDecoration(
+            gradient: new LinearGradient(
+                colors: [
+                  Color(0xFF1A1E6D),
+                  Color(0xFF0710CB)
+                ],
+                begin: const FractionalOffset(1.0, 0.1),
+                end: const FractionalOffset(1.0, 0.9)
+            ) //LinearGradient
+        ) //BoxDecoration
+    ); //Container
+
+  }
+}
+
+class Header extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      body: new Stack(
+        children: <Widget>[
+          new GradientBack(),
+          new Container(
+
+            alignment: Alignment.center,
+            margin: new EdgeInsets.only(
+                top: 50.0
+            ),
+            child: new Column(
+              children:<Widget>[
+                new Text(
+                    "BEMstore",
+                    style: const TextStyle(
+                      fontSize: 55.0,
+                      color: Color(0x906CFF47),
+                      fontWeight: FontWeight.w600,
+                    )
+                ),//Text
+                new Button(),
+                new Button1(),
+                new Button2(),
+                new Button3(),
+                new ButtonAccept(),
+              ],//<Widget>
+            ),//Column
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class Button extends StatefulWidget {
+  @override
+  EffectButton createState() => EffectButton();
+}
+
+class EffectButton extends State<Button> {
+  @override
+
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFCED0FF),
+            offset: new Offset(10.0, 10.0),
+            blurRadius: 30.0,
+          ),
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFCED0FF),
+      ),
+      child: new Center(
+        child: new Text(
+          "VOLEY",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+//No traducir!!!!!!!!! Mauro
+class Button1 extends StatefulWidget {
+  @override
+  EffectButton1 createState() => EffectButton1();
+}
+
+class EffectButton1 extends State<Button1> {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFF11BD00),
+            offset: new Offset(10.0, 10.0),
+            blurRadius: 30.0,
+          )
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFF11BD00),
+      ),
+      child: new Center(
+        child: new Text(
+          "BASKETBALL",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+class Button2 extends StatefulWidget {
+  @override
+  EffectButton2 createState() => EffectButton2();
+}
+
+class EffectButton2 extends State<Button2> {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFCED0FF),
+            offset: new Offset(10.0, 10.0),
+            blurRadius:30.0,
+          )
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFCED0FF),
+      ),
+      child: new Center(
+        child: new Text(
+          "RUGBY",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Button3 extends StatefulWidget {
+  @override
+  EffectButton3 createState() => EffectButton3();
+}
+
+class EffectButton3 extends State<Button3> {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+          top: 30.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      height: 50.0,
+      width: 180,
+      decoration: new BoxDecoration(
+        boxShadow: [
+          new BoxShadow(
+            color: Color(0xFFCED0FF),
+            offset: new Offset(10.0, 10.0),
+            blurRadius:30.0,
+          )
+        ],
+        borderRadius: new BorderRadius.circular(30.0),
+        color: Color(0xFFCED0FF),
+      ),
+      child: new Center(
+        child: new Text(
+          "FUTBOL",
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFF4435a0),
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class ButtonAccept extends StatelessWidget {
+  //MyHomePage({Key key, this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      margin: new EdgeInsets.only(
+          top: 40.0,
+          left: 20.0,
+          right: 20.0
+      ),
+      child: Center(
+        child: SizedBox(
+          width: 180,
+          height: 50.0,
+          child:  RaisedButton(
+            color: Color(0xFFEEEEEE),
+            child: Text(
+              'Aceptar',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Color(0xFF11BD00)
+                ),
+            ),
+            onPressed:() {
+              Route route = MaterialPageRoute(builder: (bc) => City());
+              Navigator.of(context).push(route);
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
+
