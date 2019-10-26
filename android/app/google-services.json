@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "868522384089",
+    "firebase_url": "https://bem-store-2.firebaseio.com",
+    "project_id": "bem-store-2",
+    "storage_bucket": "bem-store-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868522384089:android:935345472bfcf7dc06fcc8",
+        "android_client_info": {
+          "package_name": "ar.com.initdev.bem_store_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868522384089-9i97ne459k4tmmpii9og1jaismkmaf8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf9VVg0GK2I2XNmFvJJpcgcxBN-FSpqqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868522384089-9i97ne459k4tmmpii9og1jaismkmaf8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
