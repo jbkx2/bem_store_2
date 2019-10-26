@@ -1,7 +1,7 @@
-import 'package:bem_store/Vistasa';
+import 'package:bem_store_2/Vistasa';
 import 'package:flutter/material.dart';
-import 'package:bem_store/Recomendations';
-import 'package:bem_store/Choice_Sport';
+import 'package:bem_store_2/Recomendations';
+import 'package:bem_store_2/Choice_Sport';
 
 class City extends StatelessWidget {
   @override
